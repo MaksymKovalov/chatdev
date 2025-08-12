@@ -59,14 +59,14 @@ export default function LoginPage() {
   const handleTwoFactor = () => {
     setLoading(true);
     setTimeout(() => {
-      navigate('/');
+      navigate('/chat');
     }, 1000);
   };
 
   const handleBiometric = async () => {
     setLoading(true);
     setTimeout(() => {
-      navigate('/');
+      navigate('/chat');
     }, 1500);
   };
 

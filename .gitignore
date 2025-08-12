@@ -10,13 +10,46 @@ lerna-debug.log*
 # Середовище розробки
 .claude/
 CLAUDE.md
+CLAUDE.MD
 DEV_NOTES*.md
+DEV_NOTES*.MD
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 .DS_Store
+
+# Документація та нотатки
+ARCHITECTURE_PLAN.md
+ARCHITECTURE_PLAN.MD
+TODO.md
+TODO.MD
+NOTES.md
+NOTES.MD
+*.txt
+README_LOCAL.md
+
+# Тестові та налагоджувальні файли
+test/
+tests/
+debug/
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+debug.log
+*.debug.*
+temp/
+tmp/
+
+# Скрипти розробки
+scripts/
+dev-scripts/
+setup.sh
+setup.bat
+deploy-local.sh
+*.local.*
 
 # Збірки
 dist/

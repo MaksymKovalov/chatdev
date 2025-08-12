@@ -82,9 +82,9 @@ export default function HomePage() {
   const navigate = useNavigate();
 
   return (
-    <Box sx={{ minHeight: '100vh', background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)' }}>
+    <Box sx={{ minHeight: '100vh', background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)', pt: 8 }}>
       {/* Hero Section */}
-      <Container maxWidth="lg" sx={{ pt: 10, pb: 8 }}>
+      <Container maxWidth="lg" sx={{ pt: 4, pb: 6, px: { xs: 2, sm: 3 } }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -99,7 +99,7 @@ export default function HomePage() {
             />
             
             <Typography variant="h1" sx={{ 
-              fontSize: { xs: '2.5rem', md: '4rem' },
+              fontSize: { xs: '2rem', sm: '3rem', md: '3.5rem', lg: '4rem' },
               fontWeight: 800,
               background: 'linear-gradient(135deg, #6366f1 0%, #22d3ee 100%)',
               backgroundClip: 'text',
@@ -109,12 +109,12 @@ export default function HomePage() {
               Корпоративна платформа<br />нового покоління
             </Typography>
             
-            <Typography variant="h5" color="text.secondary" sx={{ maxWidth: 800 }}>
+            <Typography variant="h6" color="text.secondary" sx={{ maxWidth: 800, fontSize: { xs: '1rem', md: '1.25rem' } }}>
               Безпечне спілкування, відеоконференції та документообіг в одній екосистемі.
               Повний контроль над даними вашої компанії.
             </Typography>
 
-            <Stack direction="row" spacing={2} sx={{ mt: 4 }}>
+            <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mt: 4, width: { xs: '100%', sm: 'auto' } }}>
               <Button 
                 variant="contained" 
                 size="large"
@@ -135,6 +135,7 @@ export default function HomePage() {
                 variant="outlined" 
                 size="large"
                 endIcon={<ArrowForward />}
+                onClick={() => navigate('/chat')}
                 sx={{ px: 4, py: 1.5 }}
               >
                 Демо версія
@@ -156,7 +157,7 @@ export default function HomePage() {
       </Container>
 
       {/* Stats Section */}
-      <Container maxWidth="lg" sx={{ pb: 8 }}>
+      <Container maxWidth="lg" sx={{ pb: 6, px: { xs: 2, sm: 3 } }}>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -192,7 +193,7 @@ export default function HomePage() {
       </Container>
 
       {/* Features Grid */}
-      <Container maxWidth="lg" sx={{ pb: 10 }}>
+      <Container maxWidth="lg" sx={{ pb: 8, px: { xs: 2, sm: 3 } }}>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -246,7 +247,7 @@ export default function HomePage() {
       </Container>
 
       {/* Security Section */}
-      <Container maxWidth="lg" sx={{ pb: 10 }}>
+      <Container maxWidth="lg" sx={{ pb: 8, px: { xs: 2, sm: 3 } }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -304,7 +305,7 @@ export default function HomePage() {
       </Container>
 
       {/* CTA Section */}
-      <Container maxWidth="lg" sx={{ pb: 10 }}>
+      <Container maxWidth="lg" sx={{ pb: 8, px: { xs: 2, sm: 3 } }}>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
